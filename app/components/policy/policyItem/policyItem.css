@@ -1,0 +1,10 @@
+.border-policy {
+  border-color: #fc5404 rgb(201, 201, 201);
+  border-radius: 50%;
+}
+.direction {
+  direction: ltr;
+}
+.direction-rtl {
+  direction: rtl;
+}

@@ -1,0 +1,8 @@
+header {
+  width: 100%;
+  height: 918px;
+}
+
+.img-shadow {
+  filter: drop-shadow(0 0 50px #FC5404)
+}

@@ -10,6 +10,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "main" : "#FC5404"
+      },
+      fontFamily: {
+        "vazir-light": "vazir-light",
+      },
+      spacing: {
+        "9/10": "90%",
+        "100": "400px",
       },
     },
   },
