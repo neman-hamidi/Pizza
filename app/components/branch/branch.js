@@ -15,7 +15,7 @@ export default function branch() {
           <p className="absolute text-4xl top-10 right-52 text-white">
             شعب رستوران ها
           </p>
-          <div className="flex justify-center gap-6 absolute -bottom-52 right-56">
+          <div className="flex justify-center gap-6 absolute -bottom-52 right-32">
             <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full w-100 h-100 relative ">
               <div className="">
                 <Image

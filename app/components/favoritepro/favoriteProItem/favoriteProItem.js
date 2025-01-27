@@ -1,7 +1,7 @@
 import React from "react";
 export default function favoriteProItem({ children,title,time,desc,price }) {
   return (
-    <div className="p-5 w-[304px] h-[490px] bg-favorite">
+    <div className="p-5 w-[280px] h-[490px] bg-favorite">
       <div className="flex justify-center items-center mt-4">
        {children}
       </div>

@@ -24,7 +24,7 @@ export default function favorite() {
             className=""
           />
         </div>
-        <div className="flex justify-center gap-6 absolute -bottom-8 right-56">
+        <div className="flex justify-center gap-6 absolute -bottom-8 right-32">
           <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
             <div className="absolute top-6 right-9">
               <Image

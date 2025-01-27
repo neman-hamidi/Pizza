@@ -19,7 +19,7 @@ export default function comments() {
             <div className="flex justify-center items-center rounded-lg p-2 bg-white"><svg className="w-4 text-main h-4 "><use href="#arrow"></use></svg></div>
             <div className="flex justify-center items-center rounded-lg p-2 bg-white"><svg className="w-4 text-main h-4 rotate-180"><use href="#arrow"></use></svg></div>
           </div>
-          <div className="flex justify-center gap-6 absolute -bottom-52 right-56">
+          <div className="flex justify-center gap-6 absolute -bottom-52 right-32">
             <div className=" w-100 h-100 relative ">
               <div className="">
                 <Image
