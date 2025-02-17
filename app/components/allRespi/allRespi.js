@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function allRespi() {
   return (
-    <div className="bg-[#181513]">
+    <section className="bg-[#181513]">
       <div className="flex w-9/10 mr-auto items-center">
         <div className="py-3.5 px-7 w-40 text-white bg-main rounded-2xl">
           تمام رسپی ها
@@ -20,10 +20,8 @@ export default function allRespi() {
       </div>
       <div className="flex items-center justify-center">
         <div>
-          <p className="text-main text-4xl mb-6 left-14">
-            جوانه های چشایی شما
-          </p>
-           <p className="text-main text-4xl mb-14 left-14"> متحول خواهد شد!</p>
+          <p className="text-main text-4xl mb-6 left-14">جوانه های چشایی شما</p>
+          <h3 className="text-main text-4xl mb-14 left-14"> متحول خواهد شد!</h3>
           <p className="text-white text-justify w-[700px] text-2xl leading-10">
             پـــــــیتزا، این دایره‌ی جادویی که با هر برشی، آدم را به دنیایی از
             طعم و لذت می‌برد. نــــان داغ و ترد که با عــــطر خوشایند خود،
@@ -51,6 +49,6 @@ export default function allRespi() {
           همین الان سفارش بده
         </div>
       </div>
-    </div>
+    </section>
   );
 }

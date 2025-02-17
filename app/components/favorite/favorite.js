@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import details from "./Text";
 export default function favorite() {
   return (
-   <>
-    <div className="bg-[#181513] z-50 relative pt-52 pb-32">
+    <section className="bg-[#181513] z-50 relative pt-52 pb-32">
       <div className="relative">
         <Image
           src="/images/favorite-img.png"
@@ -21,95 +21,30 @@ export default function favorite() {
             width={200}
             height={200}
             alt="minipizza"
-            className=""
           />
         </div>
         <div className="flex justify-center gap-6 absolute -bottom-8 right-32">
-          <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
-            <div className="absolute top-6 right-9">
-              <Image
-                src="/images/chiz.png"
-                width={100}
-                height={100}
-                alt="minipizza"
-                className=""
-              />
+          {details.map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative"
+            >
+              <div className="absolute top-6 right-9">
+                <Image
+                  src={item.src}
+                  width={100}
+                  height={100}
+                  alt="minipizza"
+                />
+              </div>
+              <p
+                className={`mt-4 text-white text-center text-3xl absolute bottom-3 ${item.className}`}
+              >
+                {item.title}
+              </p>
             </div>
-            <p className="mt-4 text-white text-center text-3xl absolute bottom-3 right-14">
-              برگر
-            </p>
-          </div>
+          ))}
 
-          <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
-            <div className="absolute top-6 right-9">
-              <Image
-                src="/images/minipizza.png"
-                width={100}
-                height={100}
-                alt="minipizza"
-                className=""
-              />
-            </div>
-            <p className="mt-4 text-white text-center text-3xl absolute bottom-3 right-14">
-              پیتزا
-            </p>
-          </div>
-          <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
-            <div className="absolute top-6 right-8">
-              <Image
-                src="/images/salad.png"
-                width={100}
-                height={100}
-                alt="minipizza"
-                className=""
-              />
-            </div>
-            <p className="mt-4 text-white text-center text-3xl absolute bottom-3 right-12">
-              سالاد
-            </p>
-          </div>
-          <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
-            <div className="absolute top-6 right-7">
-              <Image
-                src="/images/sokhari.png"
-                width={100}
-                height={100}
-                alt="minipizza"
-                className=""
-              />
-            </div>
-            <p className="mt-4 text-white text-center text-3xl absolute bottom-3 right-8">
-              سوخاری
-            </p>
-          </div>
-          <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
-            <div className="absolute top-6 right-9">
-              <Image
-                src="/images/pasta.png"
-                width={100}
-                height={100}
-                alt="minipizza"
-                className=""
-              />
-            </div>
-            <p className="mt-4 text-white text-center text-3xl absolute bottom-3 right-12">
-              پاستا
-            </p>
-          </div>
-          <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
-            <div className="absolute top-6 right-9">
-              <Image
-                src="/images/sandevich.png"
-                width={100}
-                height={100}
-                alt="minipizza"
-                className=""
-              />
-            </div>
-            <p className="mt-4 text-white text-center text-3xl absolute bottom-3 right-7">
-              ساندویچ
-            </p>
-          </div>
           <div className="bg-[#1B1A19] rounded-tr-full rounded-tl-full rounded-b-md w-40 h-[217px] relative">
             <div className="flex absolute top-6 right-8">
               <Image
@@ -124,7 +59,6 @@ export default function favorite() {
                 width={50}
                 height={92}
                 alt="minipizza"
-                className=""
               />
             </div>
             <p className="mt-4 text-white mx-auto text-3xl absolute bottom-3 right-8">
@@ -133,7 +67,6 @@ export default function favorite() {
           </div>
         </div>
       </div>
-    </div>
-   </>
+    </section>
   );
 }

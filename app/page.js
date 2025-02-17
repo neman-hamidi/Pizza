@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Favorite/>
-      <Favoritepro/>
-      <AllRespi/>
-      <Policy/>
-      <Branch/>
-      <Comments/>
-      <Footer/>
+      <Favorite />
+      <Favoritepro />
+      <AllRespi />
+      <Policy />
+      <Branch />
+      <Comments />
+      <Footer />
     </>
   );
 }
